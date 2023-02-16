@@ -7,8 +7,75 @@
   --vermelho-escuro:  rgb(85, 31, 31);
 }
 
-
-*, body {
+*{
   margin: 0;
   padding: 0;
 }
+
+body{
+  height: 100vh;
+  background-image: var(--background);
+  color: var(--branco);
+  font-size: 26px;
+}
+
+.titulo__principal{
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container__formulario{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+}
+
+.caixa__input{
+  width: 70%;
+  height: 3em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--cinza);
+  color: var(--preto);
+  margin: 0.4em auto;
+  font-size: 1em;
+  
+}
+
+label{
+  margin-right: auto;
+  margin-left: 4.5em;
+}
+
+
+
+.botao__submit{
+  width: 20%;
+  align-self: flex-end;
+  background-color: var(--roxo);
+  color: var(--branco);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+.botao__submit:hover{
+  background-color: var(--branco);
+  color: var(--roxo);
+  transition: 0.5s;
+}
+
+::placeholder{
+  color: var(--vermelho-escuro);
+  
+}
+
